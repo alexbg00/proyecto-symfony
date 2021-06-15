@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+        {% block stylesheets %}
+            <link href="{{ asset('assets/css/style2.css') }}" type="text/css" rel="stylesheet" />        
+
+        {% endblock %}
+
+{% block title %}Todas las tareas{% endblock %}
+
+{% block body %}
+
+<div class="example-wrapper">
+    <h2>Todas las tareas ✅</h2>
+    {{ include ('includes/task-list.html.twig') }}
+ 
+</div>
+
+{% endblock %}

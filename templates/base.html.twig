@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+
+        {% block stylesheets %}
+            <link href="{{ asset('assets/css/style.css') }}" type="text/css" rel="stylesheet" />        
+
+        {% endblock %}
+
+
+    </head>
+    <body>
+         {% block header %}
+
+    <div class = "header ">
+         <h1>  📑  Mis Tareas  📑  </h1>
+
+         <ul id="menu">
+
+            {% if app.user %}
+            <li><a href="{{ path ('task')}}">INICIO</a></li>
+            <li><a href="{{ path ('my_tasks') }}">MIS TAREAS</a></li>
+
+            <li><a href={{ path ('task_creation')}}>CREAR TAREA</a></li>
+           
+            <div class="sesion1">
+            <li class="sesion" style="float:right"><a href="{{ path ('logout')}}">CERRAR SESION</a></li>
+            <li style="float:right"><a href=""> Bienvenido {{ app.user.name ~ " " ~ app.user.surname }} </a></li>
+            </div>
+
+            {% else %}
+            <li><a href="{{ path ('login')}}">LOGIN</a></li>
+            <li><a href="{{ path ('register')}}">REGISTRO</a></li>
+
+            {% endif %}
+    
+
+         </ul>
+    </div>
+
+    <div class="clearfix"></div>
+         {% endblock %}
+       
+        {% block javascripts %}{% endblock %}
+        
+        {% block body %}{% endblock %}
+    </body>
+</html>

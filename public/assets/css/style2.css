@@ -1,0 +1,129 @@
+body {
+    background:linear-gradient(to right, #000046, #1cb5e0);   
+    text-align: center;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+.example-wrapper 
+{ margin: 1em auto;
+max-width: 800px; 
+width: 95%; 
+font: 18px/1.5 sans-serif; }
+
+.example-wrapper code 
+{ background: #F5F5F5; 
+padding: 2px 6px; 
+}
+
+.header{
+    margin: 1em auto;
+    max-width: 800px; 
+    width: 95%; 
+    font: 18px/1.5 sans-serif;
+    text-align: center;
+}
+
+#menu{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    margin-left: 10px;
+    margin-right:10px ;
+    border-radius: 1px solid;
+}
+
+#menu a{
+    color: #d8d8d8;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right:10px ;
+    text-align: center;
+}
+
+#menu li{
+
+    float:left;
+    display:block;
+    cursor: pointer;
+    transition: all 300ms;
+
+}
+#menu li.right{
+    float: right;
+    color: #1cb5e0;
+    
+}
+
+#menu li:hover{
+    background: rgb(194, 65, 65);
+
+}
+
+.sesion{
+    background: rgb(119, 0, 0);
+}
+.sesion:hover{
+    background: rgb(0, 0, 0);
+}
+
+
+label{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+#task_content{
+    width: 80%;
+    padding: 8px;
+    font-size: 15px;
+}
+
+button,
+input[type="submit"]:hover{
+    padding: 15px;
+    margin-top: 15px;
+    background: rgb(90, 196, 228);
+    cursor: pointer;
+
+    }
+button:hover,
+input[type="submit"]:hover{
+    background: #3c8ebd;
+}
+
+
+table{
+    width:100%;
+}
+
+table th,
+table td{
+    background: #f6f6f6;
+    padding: 15px;
+    padding-right: 25px;
+    padding-left: 25px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+
+table td{
+    background: #e9ffea;
+}
+
+.button a{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 22px;
+}
+.data-task{
+    color: grey;
+}
+

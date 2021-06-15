@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+        {% block stylesheets %}
+            <link href="{{ asset('assets/css/style2.css') }}" type="text/css" rel="stylesheet" />        
+
+        {% endblock %}
+
+{% block title %}Detalles de las tareas{% endblock %}
+
+{% block body %}
+
+<div class="example-wrapper">
+    <h2>{{task.title}}</h2>
+    <p class="data-task">
+        {{ task.user.name}}  {{ task.user.surname  }} <br> creado el : <br>{{ task.user.createdAt|date('d/m/Y') }}
+    </p>
+
+    <p>
+        {{ task.content }}
+    </p>
+
+</div>
+
+{% endblock %}
+
